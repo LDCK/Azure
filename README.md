@@ -1,1 +1,1 @@
-# AZ-CLI
+# AZ-CLI notes and ramblings
