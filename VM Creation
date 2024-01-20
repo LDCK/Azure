@@ -1,3 +1,13 @@
+## List all available VM images
+az vm image list --outputtable
+
+## List all images provided by Microsoft
+az vm image list --publisherMicrosoft --outputtable --all
+
+## List images available in a specific region
+az vm image list --locationeastus --outputtable
+
+
 ## This command creates a new Ubuntu Linux virtual machine with the name SampleVM.
 az vm create \
   --resource-group[sandbox resource group name]\
@@ -10,12 +20,3 @@ az vm create \
 
 ## Verify VM is running
 ssh azureuser@<public-ip-address>
-
-## List all available VM images
-az vm image list --outputtable
-
-## List all images provided by Microsoft
-az vm image list --publisherMicrosoft --outputtable --all
-
-## List images available in a specific region
-az vm image list --locationeastus --outputtable
