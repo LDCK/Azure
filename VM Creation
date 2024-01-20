@@ -1,0 +1,21 @@
+## This command creates a new Ubuntu Linux virtual machine with the name SampleVM.
+az vm create \
+  --resource-group[sandbox resource group name]\
+  --locationwestus \
+  --nameSampleVM \
+  --imageUbuntu2204 \
+  --admin-usernameazureuser \
+  --generate-ssh-keys\
+  --verbose
+
+## Verify VM is running
+ssh azureuser@<public-ip-address>
+
+## List all available VM images
+az vm image list --outputtable
+
+## List all images provided by Microsoft
+az vm image list --publisherMicrosoft --outputtable --all
+
+## List images available in a specific region
+az vm image list --locationeastus --outputtable
