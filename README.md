@@ -1,1 +1,1 @@
-# AZ-CLI notes and ramblings
+# All Azure projects, files and notes.
